@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recensione</title>
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	<script>
+		function showConfirmation() {
+			if (confirm("Confermi la recensione?")) {
+				alert("Recensione completata!");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Scrivi una recensione</h1>
+		<form>
+			<!--  <label for="apartment-select">Seleziona l'appartamento:</label>
+			<select id="apartment-select" name="apartment-select">
+				<option value="Appartamento 1">Appartamento 1</option>
+				<option value="Appartamento 2">Appartamento 2</option>
+				<option value="Appartamento 3">Appartamento 3</option>
+			</select>-->
+			<br>
+			<label for="stars">Voto:</label>
+			<br>
+			<div class="stars">
+				<input type="radio" name="stars" class="star-1" id="star-1" value="1">
+				<label class="star-1" for="star-1"><i class="fa fa-star"></i></label>
+				<input type="radio" name="stars" class="star-2" id="star-2" value="2">
+				<label class="star-2" for="star-2"><i class="fa fa-star"></i></label>
+				<input type="radio" name="stars" class="star-3" id="star-3" value="3">
+				<label class="star-3" for="star-3"><i class="fa fa-star"></i></label>
+				<input type="radio" name="stars" class="star-4" id="star-4" value="4">
+				<label class="star-4" for="star-4"><i class="fa fa-star"></i></label>
+				<input type="radio" name="stars" class="star-5" id="star-5" value="5">
+				<label class="star-5" for="star-5"><i class="fa fa-star"></i></label>
+			</div>
+			<br>
+			<label for="comment">Commento:</label>
+			<textarea id="comment" name="comment" rows="5"></textarea>
+			<br>
+			<input type="submit" value="Invia" onclick="showConfirmation()"><br>
+		
+			
+			<input type="button" value="Annulla" onclick="location.href='visualizza_soggiorni.html'">
+		
+		</form>
+		
+	</div>
+</body>
+</html>

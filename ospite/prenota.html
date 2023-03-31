@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prenota</title>
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Riepilogo della prenotazione</h1>
+		<div>
+	
+			<p><strong>Appartamento:</strong> Appartamento al centro di Bologna</p>
+			<p><strong>Data di inizio:</strong> 01/06/2023</p>
+			<p><strong>Data di fine:</strong> 30/06/2023</p>
+			<p><strong>Numero di persone:</strong> 2</p>
+			<p><strong>Prezzo totale:</strong> 1500 euro</p>
+		</div><br>
+		<form>
+			<input type="submit" onclick="showConfirmation()" value="Prenota">			
+			<input type="button" value="Annulla" onclick="location.href='ricerca_immobile.html'">
+			
+		</form>	
+	</div>
+
+	<script>
+		function showConfirmation() {
+			if (confirm("Confermi la prenotazione?")) {
+				alert("Prenotazione confermata!");
+			}
+		}
+	</script>
+</body>
+</html>

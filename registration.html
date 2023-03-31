@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Bologna Bed &amp; Breakfast Registrazione</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Registrazione</h1>
+		<form>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" placeholder="Inserisci il tuo username" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" placeholder="Metti la tua password" required>
+			<label for="user-type">Sei un:</label>
+			<div class="radio-group">
+				<label for="ospite">
+					<input type="radio" id="ospite" name="user-type" value="Ospite" checked>
+					Ospite
+				</label>
+				<label for="host">
+					<input type="radio" id="ospitante" name="user-type" value="Ospitante">
+					Ospitante
+				</label>
+			</div>
+			<input type="submit" value="Registrati">
+		</form>
+	</div>
+</body>
+</html>
+
