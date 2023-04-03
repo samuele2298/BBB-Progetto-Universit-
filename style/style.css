@@ -311,12 +311,12 @@ input[type="date"] {
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
 
-}/*
+}
 input[type ="date"]::-webkit-calendar-picker-indicator {
   background-color: #fff;
 
 }
-
+/*
 input[type="date"]:focus {
   outline: none;
   box-shadow: 0 0 0 2px #000 inset;
